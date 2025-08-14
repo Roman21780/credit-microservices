@@ -1,0 +1,19 @@
+GET http://localhost:8080/actuator/health
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-15T005603.404.json
+
+###
+
+GET http://localhost:8080/api/credit-applications//status
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-15T005304.404.json
+
+###
+

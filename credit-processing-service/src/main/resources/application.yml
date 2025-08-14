@@ -1,4 +1,13 @@
 spring:
+  management:
+    endpoint:
+      health:
+        enabled: true
+    endpoints:
+      web:
+        exposure:
+          include: health
+
   kafka:
     bootstrap-servers: localhost:9092
     consumer:

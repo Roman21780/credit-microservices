@@ -26,6 +26,14 @@ powershell
 Set-ExecutionPolicy RemoteSigned -Scope Process  # Разрешить запуск скриптов
 .\start-infra.ps1
 
+## команды в терминале
+### Окно 1:
+cd C:\kafka
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+### Окно 2:
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
 bash
 chmod +x start-infra.sh
 ./start-infra.sh
