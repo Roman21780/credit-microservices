@@ -33,6 +33,14 @@ cd C:\kafka
 
 ### Окно 2:
 .\bin\windows\kafka-server-start.bat .\config\server.properties
+или
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+### Окно 3:
+# Для RabbitMQ
+Get-Service RabbitMQ
+Start-Service RabbitMQ
+"C:\Program Files\RabbitMQ Server\rabbitmq_server-3.12.0\sbin\rabbitmqctl.bat" status
 
 bash
 chmod +x start-infra.sh
