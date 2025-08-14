@@ -1,10 +1,10 @@
 package com.example.creditprocessingservice.service;
 
-import com.example.creditprocessingservice.event.ProcessingResultEvent;
+import com.example.creditcommon.event.ProcessingResultEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import com.example.creditapplication.event.ApplicationEvent;
+import com.example.creditcommon.event.ApplicationEvent;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +22,7 @@ public class KafkaListenerService {
     public void processApplication(ApplicationEvent event) {
         log.info("Processing application: {}", event.getApplicationId());
 
-        BigDecimal monthlyPayment = calculateMonthlyPayvent(
+        BigDecimal monthlyPayment = calculateMonthlyPayment(
                 event.getAmount(),
                 event.getTerm(),
                 YEARLY_RATE
@@ -42,7 +42,7 @@ public class KafkaListenerService {
         log.info("Decision for application {}: {}", event.getApplicationId(), result.getStatus());
     }
 
-    private BigDecimal calculateMonthlyPayvent(BigDecimal amount, Integer termMonths, BigDecimal yearlyRate) {
+    private BigDecimal calculateMonthlyPayment(BigDecimal amount, Integer termMonths, BigDecimal yearlyRate) {
         BigDecimal monthlyRate = yearlyRate.divide(BigDecimal.valueOf(12), 10, RoundingMode.HALF_UP);
         BigDecimal ratePlusOne = monthlyRate.add(BigDecimal.ONE);
         BigDecimal pow = ratePlusOne.pow(termMonths);

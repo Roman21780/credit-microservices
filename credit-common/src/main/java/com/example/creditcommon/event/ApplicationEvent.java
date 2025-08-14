@@ -1,4 +1,4 @@
-package com.example.creditapplicationservice.event;
+package com.example.creditcommon.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,7 +1,7 @@
 package com.example.creditapplicationservice.service;
 
 import com.example.creditapplicationservice.dto.CreditApplicationDto;
-import com.example.creditapplicationservice.event.ApplicationEvent;
+import com.example.creditcommon.event.ApplicationEvent;
 import com.example.creditapplicationservice.model.CreditApplication;
 import com.example.creditapplicationservice.repository.CreditApplicationRepository;
 import jakarta.transaction.Transactional;

@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral() // Основной репозиторий Maven
+    maven { url 'https://repo.spring.io/milestone' } // Для Spring Kafka
+}
+
+dependencies {
+    implementation 'org.springframework.kafka:spring-kafka:3.0.10'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.3'
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+    // Для тестов
+    testCompileOnly 'org.projectlombok:lombok:1.18.34'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+}

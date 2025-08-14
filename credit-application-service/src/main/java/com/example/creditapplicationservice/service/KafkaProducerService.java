@@ -1,6 +1,6 @@
 package com.example.creditapplicationservice.service;
 
-import com.example.creditapplicationservice.event.ApplicationEvent;
+import com.example.creditcommon.event.ApplicationEvent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
