@@ -1,5 +1,5 @@
 rootProject.name = 'credit-microservices'
 
-include 'credit-application-service'
-include 'credit-processing-service'
-include 'credit-common'
+include ':credit-common'
+include ':credit-application-service'
+include ':credit-processing-service'

@@ -2,7 +2,19 @@
 
 ## Собрать проект
 
-./gradlew build
+# Очистка
+./gradlew :credit-application-service:clean
+./gradlew :credit-processing-service:clean
+
+# Сборка
+./gradlew :credit-application-service:build
+./gradlew :credit-processing-service:build
+
+## Запуск сервисов в разных терминалах
+
+./gradlew :credit-application-service:bootRun
+
+./gradlew :credit-processing-service:bootRun
 
 ## В корне проекта выполните команду:
 
