@@ -1,15 +1,14 @@
 spring:
   kafka:
-    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP-SERVERS:localhost:9092}
+    bootstrap-servers: localhost:9092
     consumer:
       group-id: credit-processing-group
-      auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring.json.trusted.packages: "*"
+
   rabbitmq:
-    host: ${SPRING_RABBITMQ_HOST:localhost}
+    host: localhost
     port: 5672
     username: guest
     password: guest
+
+server:
+  port: 8081

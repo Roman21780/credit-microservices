@@ -20,7 +20,25 @@
 
 docker-compose up --build
 
+## для запуска без докера
+
+powershell
+Set-ExecutionPolicy RemoteSigned -Scope Process  # Разрешить запуск скриптов
+.\start-infra.ps1
+
+bash
+chmod +x start-infra.sh
+./start-infra.sh
+
 ## После запуска всех сервисов можно отправлять запросы:
+
+создать топик в Kafka
+
+kafka-topics.sh --create --topic credit-applications --bootstrap-server localhost:9092
+
+проверка, что топик создан
+
+kafka-topics.sh --list --bootstrap-server localhost:9092
 
 Создать заявку: POST /api/credit-applications
 
