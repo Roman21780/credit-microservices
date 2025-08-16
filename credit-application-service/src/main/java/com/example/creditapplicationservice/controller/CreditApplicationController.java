@@ -13,13 +13,13 @@ public class CreditApplicationController {
     private final CreditApplicationService service;
 
     @PostMapping
-    public ResponseEntity<Long> createApplication(@RequestBody CreditApplicationDto dto) {
-        Long id = service.processApplication(dto);
+    public ResponseEntity<String> createApplication(@RequestBody CreditApplicationDto dto) {
+        String id = service.processApplication(dto);
         return ResponseEntity.ok(id);
     }
 
     @GetMapping("/{id}/status")
-    public ResponseEntity<String> getStatus(@PathVariable Long id) {
+    public ResponseEntity<String> getStatus(@PathVariable String id) {
         try {
             return ResponseEntity.ok(service.getStatus(id));
         } catch (RuntimeException e) {

@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Data
 @Builder
@@ -17,8 +18,9 @@ import java.time.LocalDateTime;
 @Table(name = "credit_applications")
 public class CreditApplication {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(length = 36)
+    @Builder.Default
+    private String id = UUID.randomUUID().toString();
 
     @Column(nullable = false)
     private BigDecimal amount;

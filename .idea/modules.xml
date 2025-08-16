@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/credit-application-service/credit-microservices.credit-application-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/credit-application-service/credit-microservices.credit-application-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/credit-common/credit-microservices.credit-common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/credit-common/credit-microservices.credit-common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/credit-processing-service/credit-microservices.credit-processing-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/credit-processing-service/credit-microservices.credit-processing-service.main.iml" />
     </modules>
   </component>
 </project>

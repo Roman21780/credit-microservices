@@ -15,7 +15,7 @@ public class CreditApplicationService {
     private final KafkaProducerService kafkaProducerService;
 
     @Transactional
-    public Long processApplication(CreditApplicationDto dto) {
+    public String processApplication(CreditApplicationDto dto) {
         // Конвертируем DTO в сущность
         CreditApplication application = CreditApplication.builder()
                 .amount(dto.getAmount())
@@ -43,7 +43,7 @@ public class CreditApplicationService {
         return savedApplication.getId();
     }
 
-    public String getStatus(Long id) {
+    public String getStatus(String id) {
         return repository.findById(id)
                 .map(CreditApplication::getStatus)
                 .orElseThrow(() -> new RuntimeException("Application not found with id:" + id));

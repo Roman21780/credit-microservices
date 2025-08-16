@@ -27,7 +27,14 @@ dependencies {
     // Внутренние модули
     implementation project(':credit-common')
 
+    // actuator
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
     // Spring
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-amqp'
     implementation 'org.springframework.kafka:spring-kafka'

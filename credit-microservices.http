@@ -11,28 +11,29 @@ POST http://localhost:8080/api/credit-applications
 Content-Type: application/json
 
 {
-  "amount": 100000,
+  "amount": 960000,
   "term": 12,
-  "income": 50000,
+  "income": 60000,
   "currentDebt": 20000,
-  "creditRating": 700
+  "creditRating": 600
 }
 
-### 4. Получение статуса заявки (подставить реальный ID из шага 2)
-@applicationId = {{credit-application.response.body.id}}
-GET http://localhost:8080/api/credit-applications/{{applicationId}}/status
+
+### 4. Получение статуса заявки
+GET http://localhost:8080/api/credit-applications/963219a9-9915-4dbc-b101-0e22f9302c0f/status
 
 ### 5. Тест обработки заявки (credit-processing-service)
-POST http://localhost:8081/api/test/process
+POST http://localhost:8081/api/credit-processing/process
 Content-Type: application/json
 
 {
-  "applicationId": "{{applicationId}}",
-  "amount": 100000,
+  "@class": "com.example.creditcommon.event.ApplicationEvent",
+  "applicationId": "963219a9-9915-4dbc-b101-0e22f9302c0f",
+  "amount": 960000,
   "term": 12,
-  "income": 50000,
+  "income": 60000,
   "currentDebt": 20000,
-  "creditRating": 700
+  "creditRating": 600
 }
 
 ### 6. Проверка логов Kafka (требует админ-доступа)
@@ -57,6 +58,10 @@ Content-Type: application/json
   "creditRating": 750
 }
 
+> {%
+    client.global.set("approvedAppId", response.body.id);
+%}
+
 #### Отклоненная заявка (платеж >50% дохода)
 POST http://localhost:8080/api/credit-applications
 Content-Type: application/json
@@ -69,6 +74,10 @@ Content-Type: application/json
   "creditRating": 650
 }
 
+> {%
+    client.global.set("rejectedAppId", response.body.id);
+%}
+
 #### Пограничный случай
 POST http://localhost:8080/api/credit-applications
 Content-Type: application/json
@@ -80,3 +89,7 @@ Content-Type: application/json
   "currentDebt": 10000,
   "creditRating": 720
 }
+
+> {%
+    client.global.set("borderlineAppId", response.body.id);
+%}

@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CreditApplicationDto {
+    private String id;
     private BigDecimal amount;
     private Integer term;
     private BigDecimal income;
