@@ -7,15 +7,17 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
 import java.util.UUID;
 
 @Repository
 public interface CreditApplicationRepository extends JpaRepository<CreditApplication, UUID> {
 
-    @Modifying
-    @Query("UPDATE CreditApplication c SET c.status = :status WHERE c.applicationId = :applicationId")
-    default void updateStatus(@Param("applicationId") String applicationId,
-                              @Param("status") String status) {
+    @Query("SELECT c.status FROM CreditApplication c WHERE c.id = :id")
+    Optional<String> findStatusById(@Param("id") UUID id);
 
-    }
+    @Modifying
+    @Query("UPDATE CreditApplication c SET c.status = :status WHERE c.id = :applicationId")
+    void updateStatus(@Param("applicationId") UUID applicationId,
+                     @Param("status") CreditApplication.Status status);
 }

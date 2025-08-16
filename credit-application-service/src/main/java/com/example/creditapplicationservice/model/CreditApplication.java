@@ -17,10 +17,15 @@ import java.util.UUID;
 @Entity
 @Table(name = "credit_applications")
 public class CreditApplication {
+
+    public enum Status {
+        IN_PROCESS, APPROVED, REJECTED
+    }
+
     @Id
-    @Column(length = 36)
-    @Builder.Default
-    private String id = UUID.randomUUID().toString();
+    @GeneratedValue
+    @Column(columnDefinition = "UUID")
+    private UUID id;
 
     @Column(name = "application_id", unique = true)
     private String applicationId;
@@ -40,9 +45,9 @@ public class CreditApplication {
     @Column(name = "credit_rating", nullable = false)
     private Integer creditRating;
 
-    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
     @Builder.Default
-    private final String status = "IN_PROCESS"; // "IN_PROCESS", "APPROVED", "REJECTED"
+    private Status status = Status.IN_PROCESS;
 
     @Column(name = "created_at")
     @Builder.Default

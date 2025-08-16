@@ -11,7 +11,7 @@ POST http://localhost:8080/api/credit-applications
 Content-Type: application/json
 
 {
-  "amount": 970000,
+  "amount": 490000,
   "term": 12,
   "income": 60000,
   "currentDebt": 20000,
@@ -20,31 +20,22 @@ Content-Type: application/json
 
 
 ### 4. Получение статуса заявки
-GET http://localhost:8080/api/credit-applications/e097f072-8e1f-49bf-9e25-2edcc1bf32ec/status
+GET http://localhost:8080/api/credit-applications/85bf070c-1539-45d4-b557-4a1608d46ea3/status
 
 ### 5. Тест обработки заявки (credit-processing-service)
 POST http://localhost:8081/api/credit-processing/process
 Content-Type: application/json
 
 {
-  "@class": "com.example.creditcommon.event.ApplicationEvent",
-  "applicationId": "e097f072-8e1f-49bf-9e25-2edcc1bf32ec",
-  "amount": 970000,
+  "applicationId": "85bf070c-1539-45d4-b557-4a1608d46ea3",
+  "amount": 490000,
   "term": 12,
   "income": 60000,
   "currentDebt": 20000,
   "creditRating": 600
 }
 
-### 6. Проверка логов Kafka (требует админ-доступа)
-GET http://localhost:8080/api/admin/kafka-status
-GET http://localhost:8081/api/admin/kafka-status
-
-### 7. Проверка RabbitMQ (требует админ-доступа)
-GET http://localhost:8080/api/admin/rabbitmq-status
-GET http://localhost:8081/api/admin/rabbitmq-status
-
-### 8. Примеры разных сценариев кредитных заявок
+### 6. Примеры разных сценариев кредитных заявок
 
 #### Одобренная заявка (платеж <50% дохода)
 POST http://localhost:8080/api/credit-applications

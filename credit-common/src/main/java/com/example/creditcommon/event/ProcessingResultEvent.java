@@ -1,18 +1,17 @@
 package com.example.creditcommon.event;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.example.creditcommon.enums.ApplicationStatus;
+import lombok.*;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProcessingResultEvent {
-    private String applicationId;
-    private String status;
+    private UUID applicationId;
+    private ApplicationStatus status; // Используем enum из common модуля
     private BigDecimal monthlyPayment;
 }

@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="949d09d9-7e6e-4efa-a252-d5bc0b446972" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
@@ -17,12 +15,24 @@
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/controller/CreditApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/controller/CreditApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/dto/CreditApplicationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/dto/CreditApplicationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/messaging/CreditStatusUpdateListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/messaging/CreditStatusUpdateListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/model/CreditApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/model/CreditApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/repository/CreditApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/repository/CreditApplicationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/CreditApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/CreditApplicationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/resources/db/migration/V1__create_credit_applications_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/resources/db/migration/V1__create_credit_applications_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ApplicationEvent$ApplicationEventBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ApplicationEvent$ApplicationEventBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ApplicationEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ApplicationEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ProcessingResultEvent$ProcessingResultEventBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ProcessingResultEvent$ProcessingResultEventBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ProcessingResultEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ProcessingResultEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/build/libs/credit-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/libs/credit-common.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ApplicationEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ApplicationEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ProcessingResultEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ProcessingResultEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-microservices.http" beforeDir="false" afterPath="$PROJECT_DIR$/credit-microservices.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-processing-service/src/main/java/com/example/creditprocessingservice/service/KafkaListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/src/main/java/com/example/creditprocessingservice/service/KafkaListenerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +96,7 @@
         <option value="HTTP Request" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -104,55 +115,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.credit-microservices [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.credit-microservices [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.credit-microservices:credit-application-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.credit-microservices:credit-common [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.credit-microservices:credit-common [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.credit-processing-service [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.credit-processing-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 1. Проверка здоровья сервисов.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 2. Проверка здоровья сервисов.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 2. Создание заявки на кредит (credit-application-service).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 3. Создание заявки на кредит (credit-application-service).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 4. Получение статуса заявки (подставить реальный ID из шага 2).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 4. Получение статуса заявки.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 5. Тест обработки заявки (credit-processing-service).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 6. Проверка логов Kafka (требует админ-доступа).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 7. Проверка RabbitMQ (требует админ-доступа).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | 8. Примеры разных сценариев кредитных заявок.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | Отклоненная заявка (платеж &gt;50% дохода).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.credit-microservices | Пограничный случай.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\Roman\\AppData\\Roaming\\JetBrains\\IntelliJIdea2025.1\\plugins\\Shell Script\\shellcheck.exe&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/Project1/WEB/credit-microservices&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.credit-microservices [build].executor": "Run",
+    "Gradle.credit-microservices [clean].executor": "Run",
+    "Gradle.credit-microservices:credit-application-service [clean].executor": "Run",
+    "Gradle.credit-microservices:credit-common [build].executor": "Run",
+    "Gradle.credit-microservices:credit-common [clean].executor": "Run",
+    "Gradle.credit-processing-service [build].executor": "Run",
+    "Gradle.credit-processing-service [clean].executor": "Run",
+    "HTTP Request.credit-microservices | 1. Проверка здоровья сервисов.executor": "Run",
+    "HTTP Request.credit-microservices | 2. Проверка здоровья сервисов.executor": "Run",
+    "HTTP Request.credit-microservices | 2. Создание заявки на кредит (credit-application-service).executor": "Run",
+    "HTTP Request.credit-microservices | 3. Создание заявки на кредит (credit-application-service).executor": "Run",
+    "HTTP Request.credit-microservices | 4. Получение статуса заявки (подставить реальный ID из шага 2).executor": "Run",
+    "HTTP Request.credit-microservices | 4. Получение статуса заявки.executor": "Run",
+    "HTTP Request.credit-microservices | 5. Тест обработки заявки (credit-processing-service).executor": "Run",
+    "HTTP Request.credit-microservices | 6. Примеры разных сценариев кредитных заявок.executor": "Run",
+    "HTTP Request.credit-microservices | 6. Проверка логов Kafka (требует админ-доступа).executor": "Run",
+    "HTTP Request.credit-microservices | 7. Проверка RabbitMQ (требует админ-доступа).executor": "Run",
+    "HTTP Request.credit-microservices | 8. Примеры разных сценариев кредитных заявок.executor": "Run",
+    "HTTP Request.credit-microservices | Отклоненная заявка (платеж >50% дохода).executor": "Run",
+    "HTTP Request.credit-microservices | Пограничный случай.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\Roman\\AppData\\Roaming\\JetBrains\\IntelliJIdea2025.1\\plugins\\Shell Script\\shellcheck.exe",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Java/Project1/WEB/credit-microservices",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.creditapplicationservice" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.credit-microservices | 4. Получение статуса заявки">
-    <configuration name="credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="Отклоненная заявка (платеж &gt;50% дохода)" index="9" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.credit-microservices | Пограничный случай">
+    <configuration name="credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="Отклоненная заявка (платеж &gt;50% дохода)" index="7" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="credit-microservices | 4. Получение статуса заявки" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="4. Получение статуса заявки" index="4" runType="Run single request">
@@ -161,10 +173,10 @@
     <configuration name="credit-microservices | 5. Тест обработки заявки (credit-processing-service)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="5. Тест обработки заявки (credit-processing-service)" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="credit-microservices | 8. Примеры разных сценариев кредитных заявок" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="8. Примеры разных сценариев кредитных заявок" index="8" runType="Run single request">
+    <configuration name="credit-microservices | 6. Примеры разных сценариев кредитных заявок" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="6. Примеры разных сценариев кредитных заявок" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="credit-microservices | Пограничный случай" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="Пограничный случай" index="10" runType="Run single request">
+    <configuration name="credit-microservices | Пограничный случай" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="Пограничный случай" index="8" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="CreditApplicationServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -197,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.credit-microservices | 4. Получение статуса заявки" />
         <item itemvalue="HTTP Request.credit-microservices | Пограничный случай" />
         <item itemvalue="HTTP Request.credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)" />
-        <item itemvalue="HTTP Request.credit-microservices | 8. Примеры разных сценариев кредитных заявок" />
+        <item itemvalue="HTTP Request.credit-microservices | 6. Примеры разных сценариев кредитных заявок" />
         <item itemvalue="HTTP Request.credit-microservices | 5. Тест обработки заявки (credit-processing-service)" />
+        <item itemvalue="HTTP Request.credit-microservices | 4. Получение статуса заявки" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +237,8 @@
       <workItem from="1755202637526" duration="2388000" />
       <workItem from="1755320614350" duration="10780000" />
       <workItem from="1755332560905" duration="10383000" />
-      <workItem from="1755343485595" duration="8082000" />
+      <workItem from="1755343485595" duration="12565000" />
+      <workItem from="1755365240125" duration="3649000" />
     </task>
     <servers />
   </component>

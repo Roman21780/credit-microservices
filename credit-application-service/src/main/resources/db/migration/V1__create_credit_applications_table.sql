@@ -1,5 +1,5 @@
 CREATE TABLE credit_applications (
-    id VARCHAR(36) PRIMARY KEY,
+    id uuid PRIMARY KEY,
     amount NUMERIC(19, 2) NOT NULL,
     term INTEGER NOT NULL,
     income NUMERIC(19, 2) NOT NULL,
@@ -19,3 +19,5 @@ CREATE INDEX idx_credit_applications_status ON credit_applications(status);
 -- DROP SCHEMA IF EXISTS public CASCADE;
 
 -- DROP TABLE IF EXISTS public.flyway_schema_history;
+
+-- ALTER TABLE credit_applications ALTER COLUMN id TYPE UUID USING id::UUID;

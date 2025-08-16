@@ -1,6 +1,7 @@
 package com.example.creditapplicationservice.service;
 
 import com.example.creditapplicationservice.dto.CreditApplicationDto;
+import com.example.creditapplicationservice.exception.ApplicationNotFoundException;
 import com.example.creditcommon.event.ApplicationEvent;
 import com.example.creditapplicationservice.model.CreditApplication;
 import com.example.creditapplicationservice.repository.CreditApplicationRepository;
@@ -19,19 +20,21 @@ public class CreditApplicationService {
     private final KafkaProducerService kafkaProducerService;
 
     @Transactional
-    public String processApplication(CreditApplicationDto dto) {
+    public UUID processApplication(CreditApplicationDto dto) {
         CreditApplication application = CreditApplication.builder()
                 .amount(dto.getAmount())
                 .term(dto.getTerm())
                 .income(dto.getIncome())
                 .currentDebt(dto.getCurrentDebt())
                 .creditRating(dto.getCreditRating())
+                .status(CreditApplication.Status.IN_PROCESS) // Устанавливаем начальный статус
                 .build();
 
         CreditApplication savedApplication = repository.save(application);
+        log.info("Created new credit application with ID: {}", savedApplication.getId());
 
         ApplicationEvent event = ApplicationEvent.builder()
-                .applicationId(savedApplication.getId())
+                .applicationId(savedApplication.getId()) // Преобразуем UUID в String
                 .amount(savedApplication.getAmount())
                 .term(savedApplication.getTerm())
                 .income(savedApplication.getIncome())
@@ -40,13 +43,11 @@ public class CreditApplicationService {
                 .build();
 
         kafkaProducerService.sendApplicationEvent(event);
-
-        return savedApplication.getId();
+        return savedApplication.getId(); // Возвращаем UUID вместо String
     }
 
-    public String getStatus(String id) {
-        return repository.findById(UUID.fromString(id))
-                .map(CreditApplication::getStatus)
-                .orElseThrow(() -> new RuntimeException("Application not found with id:" + id));
+    public String getStatus(UUID id) {
+        return repository.findStatusById(id)
+                .orElseThrow(() -> new ApplicationNotFoundException(id));
     }
 }

@@ -8,32 +8,28 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS)
 public class ApplicationEvent {
-    @NotBlank
-    private String applicationId;
-
     @NotNull
+    private UUID applicationId;
+
     @Positive
     private BigDecimal amount;
 
-    @NotNull
-    @Min(1)
+    @Positive
     private Integer term;
 
-    @NotNull
     @Positive
     private BigDecimal income;
 
-    @NotNull
     @PositiveOrZero
     private BigDecimal currentDebt;
 
-    @NotNull
+    @Min(300) @Max(850)
     private Integer creditRating;
 }

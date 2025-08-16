@@ -1,5 +1,6 @@
 package com.example.creditapplicationservice.dto;
 
+import com.example.creditapplicationservice.model.CreditApplication;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,4 +19,5 @@ public class CreditApplicationDto {
     private BigDecimal income;
     private BigDecimal currentDebt;
     private Integer creditRating;
+    private CreditApplication.Status status;
 }
