@@ -6,8 +6,12 @@ import com.example.creditapplicationservice.model.CreditApplication;
 import com.example.creditapplicationservice.repository.CreditApplicationRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class CreditApplicationService {
@@ -16,7 +20,6 @@ public class CreditApplicationService {
 
     @Transactional
     public String processApplication(CreditApplicationDto dto) {
-        // Конвертируем DTO в сущность
         CreditApplication application = CreditApplication.builder()
                 .amount(dto.getAmount())
                 .term(dto.getTerm())
@@ -25,10 +28,8 @@ public class CreditApplicationService {
                 .creditRating(dto.getCreditRating())
                 .build();
 
-        // Сохраняем в БД
         CreditApplication savedApplication = repository.save(application);
 
-        // Отправляем событие в Kafka
         ApplicationEvent event = ApplicationEvent.builder()
                 .applicationId(savedApplication.getId())
                 .amount(savedApplication.getAmount())
@@ -44,7 +45,7 @@ public class CreditApplicationService {
     }
 
     public String getStatus(String id) {
-        return repository.findById(id)
+        return repository.findById(UUID.fromString(id))
                 .map(CreditApplication::getStatus)
                 .orElseThrow(() -> new RuntimeException("Application not found with id:" + id));
     }

@@ -11,7 +11,7 @@ POST http://localhost:8080/api/credit-applications
 Content-Type: application/json
 
 {
-  "amount": 960000,
+  "amount": 970000,
   "term": 12,
   "income": 60000,
   "currentDebt": 20000,
@@ -20,7 +20,7 @@ Content-Type: application/json
 
 
 ### 4. Получение статуса заявки
-GET http://localhost:8080/api/credit-applications/963219a9-9915-4dbc-b101-0e22f9302c0f/status
+GET http://localhost:8080/api/credit-applications/e097f072-8e1f-49bf-9e25-2edcc1bf32ec/status
 
 ### 5. Тест обработки заявки (credit-processing-service)
 POST http://localhost:8081/api/credit-processing/process
@@ -28,8 +28,8 @@ Content-Type: application/json
 
 {
   "@class": "com.example.creditcommon.event.ApplicationEvent",
-  "applicationId": "963219a9-9915-4dbc-b101-0e22f9302c0f",
-  "amount": 960000,
+  "applicationId": "e097f072-8e1f-49bf-9e25-2edcc1bf32ec",
+  "amount": 970000,
   "term": 12,
   "income": 60000,
   "currentDebt": 20000,

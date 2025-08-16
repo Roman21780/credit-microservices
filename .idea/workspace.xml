@@ -15,32 +15,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/credit-application-service/credit-microservices.credit-application-service.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/controller/CreditApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/controller/CreditApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/dto/CreditApplicationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/dto/CreditApplicationDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/model/CreditApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/model/CreditApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/repository/CreditApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/repository/CreditApplicationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/CreditApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/CreditApplicationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/resources/db/migration/V1__create_credit_applications_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/resources/db/migration/V1__create_credit_applications_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ApplicationEvent$ApplicationEventBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ApplicationEvent$ApplicationEventBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ApplicationEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ApplicationEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ProcessingResultEvent$ProcessingResultEventBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ProcessingResultEvent$ProcessingResultEventBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ProcessingResultEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/classes/java/main/com/example/creditcommon/event/ProcessingResultEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/build/libs/credit-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/libs/credit-common.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ApplicationEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ApplicationEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ProcessingResultEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ProcessingResultEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-microservices.http" beforeDir="false" afterPath="$PROJECT_DIR$/credit-microservices.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-processing-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-processing-service/src/main/java/com/example/creditprocessingservice/service/KafkaListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/src/main/java/com/example/creditprocessingservice/service/KafkaListenerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-processing-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +151,7 @@
       <recent name="com.example.creditapplicationservice" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)">
+  <component name="RunManager" selected="HTTP Request.credit-microservices | 4. Получение статуса заявки">
     <configuration name="credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="Отклоненная заявка (платеж &gt;50% дохода)" index="9" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -215,10 +197,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)" />
-        <item itemvalue="HTTP Request.credit-microservices | Пограничный случай" />
-        <item itemvalue="HTTP Request.credit-microservices | 8. Примеры разных сценариев кредитных заявок" />
         <item itemvalue="HTTP Request.credit-microservices | 4. Получение статуса заявки" />
+        <item itemvalue="HTTP Request.credit-microservices | Пограничный случай" />
+        <item itemvalue="HTTP Request.credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)" />
+        <item itemvalue="HTTP Request.credit-microservices | 8. Примеры разных сценариев кредитных заявок" />
         <item itemvalue="HTTP Request.credit-microservices | 5. Тест обработки заявки (credit-processing-service)" />
       </list>
     </recent_temporary>
@@ -243,7 +225,7 @@
       <workItem from="1755202637526" duration="2388000" />
       <workItem from="1755320614350" duration="10780000" />
       <workItem from="1755332560905" duration="10383000" />
-      <workItem from="1755343485595" duration="3782000" />
+      <workItem from="1755343485595" duration="8082000" />
     </task>
     <servers />
   </component>

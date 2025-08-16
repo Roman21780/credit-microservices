@@ -22,6 +22,9 @@ public class CreditApplication {
     @Builder.Default
     private String id = UUID.randomUUID().toString();
 
+    @Column(name = "application_id", unique = true)
+    private String applicationId;
+
     @Column(nullable = false)
     private BigDecimal amount;
 
