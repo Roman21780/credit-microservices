@@ -16,17 +16,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/config/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/dto/CreditApplicationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/dto/CreditApplicationDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/messaging/CreditStatusUpdateListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/messaging/CreditStatusUpdateListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/model/CreditApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/model/CreditApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/repository/CreditApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/repository/CreditApplicationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/CreditApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/CreditApplicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/KafkaProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/KafkaProducerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ProcessingResultEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ProcessingResultEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit-microservices.http" beforeDir="false" afterPath="$PROJECT_DIR$/credit-microservices.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-processing-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-processing-service/src/main/java/com/example/creditprocessingservice/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/src/main/java/com/example/creditprocessingservice/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-processing-service/src/main/java/com/example/creditprocessingservice/service/KafkaListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/src/main/java/com/example/creditprocessingservice/service/KafkaListenerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-processing-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,17 +154,17 @@
       <recent name="com.example.creditapplicationservice" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.credit-microservices | 5. Тест обработки заявки (credit-processing-service)">
+  <component name="RunManager" selected="HTTP Request.credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)">
     <configuration name="credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="Отклоненная заявка (платеж &gt;50% дохода)" index="7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="credit-microservices | 3. Создание заявки на кредит (credit-application-service)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="3. Создание заявки на кредит (credit-application-service)" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="credit-microservices | 4. Получение статуса заявки" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="4. Получение статуса заявки" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="credit-microservices | 5. Тест обработки заявки (credit-processing-service)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="5. Тест обработки заявки (credit-processing-service)" index="5" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="credit-microservices | 6. Примеры разных сценариев кредитных заявок" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="6. Примеры разных сценариев кредитных заявок" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="credit-microservices | Пограничный случай" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/credit-microservices.http" executionIdentifier="Пограничный случай" index="8" runType="Run single request">
@@ -203,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.credit-microservices | 5. Тест обработки заявки (credit-processing-service)" />
-        <item itemvalue="HTTP Request.credit-microservices | Пограничный случай" />
         <item itemvalue="HTTP Request.credit-microservices | Отклоненная заявка (платеж &gt;50% дохода)" />
-        <item itemvalue="HTTP Request.credit-microservices | 6. Примеры разных сценариев кредитных заявок" />
+        <item itemvalue="HTTP Request.credit-microservices | 5. Тест обработки заявки (credit-processing-service)" />
         <item itemvalue="HTTP Request.credit-microservices | 4. Получение статуса заявки" />
+        <item itemvalue="HTTP Request.credit-microservices | 3. Создание заявки на кредит (credit-application-service)" />
+        <item itemvalue="HTTP Request.credit-microservices | Пограничный случай" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +230,7 @@
       <workItem from="1755332560905" duration="10383000" />
       <workItem from="1755343485595" duration="12565000" />
       <workItem from="1755365240125" duration="3781000" />
-      <workItem from="1755405966536" duration="10399000" />
+      <workItem from="1755405966536" duration="14673000" />
     </task>
     <servers />
   </component>

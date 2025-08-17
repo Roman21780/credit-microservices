@@ -1,5 +1,6 @@
 package com.example.creditapplicationservice.model;
 
+import com.example.creditcommon.enums.ApplicationStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,10 +18,6 @@ import java.util.UUID;
 @Entity
 @Table(name = "credit_applications")
 public class CreditApplication {
-
-    public enum Status {
-        IN_PROCESS, APPROVED, REJECTED
-    }
 
     @Id
     @GeneratedValue
@@ -46,8 +43,7 @@ public class CreditApplication {
     private Integer creditRating;
 
     @Enumerated(EnumType.STRING)
-    @Builder.Default
-    private Status status = Status.IN_PROCESS;
+    private ApplicationStatus status;
 
     @Column(name = "created_at")
     @Builder.Default

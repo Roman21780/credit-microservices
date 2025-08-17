@@ -37,6 +37,10 @@ public class RabbitMQConfig {
     public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
         RabbitTemplate template = new RabbitTemplate(connectionFactory);
         template.setMessageConverter(jsonMessageConverter());
+        template.setMandatory(true);
+        template.setReturnsCallback(returned -> {
+            log.error("Message returned: {}", returned);
+        });
         template.setConfirmCallback((correlation, ack, reason) -> {
             if (!ack) {
                 log.error("Message failed to reach queue: {}", reason);

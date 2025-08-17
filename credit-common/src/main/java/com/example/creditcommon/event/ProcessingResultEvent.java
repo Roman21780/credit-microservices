@@ -13,7 +13,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class ProcessingResultEvent {
     private UUID applicationId;
-    private ApplicationStatus status; // Используем enum из common модуля
+    private ApplicationStatus status;
     private BigDecimal monthlyPayment;
     private LocalDateTime decisionDate;
     private String rejectionReason;

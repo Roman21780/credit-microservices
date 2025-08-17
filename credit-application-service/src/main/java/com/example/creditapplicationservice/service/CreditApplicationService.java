@@ -2,6 +2,7 @@ package com.example.creditapplicationservice.service;
 
 import com.example.creditapplicationservice.dto.CreditApplicationDto;
 import com.example.creditapplicationservice.exception.ApplicationNotFoundException;
+import com.example.creditcommon.enums.ApplicationStatus;
 import com.example.creditcommon.event.ApplicationEvent;
 import com.example.creditapplicationservice.model.CreditApplication;
 import com.example.creditapplicationservice.repository.CreditApplicationRepository;
@@ -27,7 +28,7 @@ public class CreditApplicationService {
                 .income(dto.getIncome())
                 .currentDebt(dto.getCurrentDebt())
                 .creditRating(dto.getCreditRating())
-                .status(CreditApplication.Status.IN_PROCESS)
+                .status(ApplicationStatus.IN_PROCESS)
                 .build();
 
         CreditApplication saved = repository.save(application);

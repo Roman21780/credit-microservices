@@ -1,6 +1,7 @@
 package com.example.creditapplicationservice.repository;
 
 import com.example.creditapplicationservice.model.CreditApplication;
+import com.example.creditcommon.enums.ApplicationStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -17,7 +18,6 @@ public interface CreditApplicationRepository extends JpaRepository<CreditApplica
     Optional<String> findStatusById(@Param("id") UUID id);
 
     @Modifying
-    @Query("UPDATE CreditApplication c SET c.status = :status WHERE c.id = :applicationId")
-    int updateStatus(@Param("applicationId") UUID applicationId,
-                     @Param("status") String status);
+    @Query("UPDATE CreditApplication c SET c.status = :status WHERE c.id = :id")
+    int updateStatus(@Param("id") UUID id, @Param("status") ApplicationStatus status);
 }
