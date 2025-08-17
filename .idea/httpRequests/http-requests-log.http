@@ -1,3 +1,148 @@
+POST http://localhost:8081/api/credit-processing/process
+Content-Type: application/json
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "applicationId": "b37d0e1c-4abd-46fe-b76d-844d50850d48",
+  "amount": 390000,
+  "term": 12,
+  "income": 60000,
+  "currentDebt": 20000,
+  "creditRating": 600
+}
+
+<> 2025-08-17T101610.200.txt
+
+###
+
+POST http://localhost:8080/api/credit-applications
+Content-Type: application/json
+Content-Length: 102
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "amount": 150000,
+  "term": 36,
+  "income": 60000,
+  "currentDebt": 10000,
+  "creditRating": 720
+}
+
+<> 2025-08-17T101603.200.json
+
+###
+
+POST http://localhost:8080/api/credit-applications
+Content-Type: application/json
+Content-Length: 101
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "amount": 200000,
+  "term": 12,
+  "income": 30000,
+  "currentDebt": 5000,
+  "creditRating": 650
+}
+
+<> 2025-08-17T101555.200.json
+
+###
+
+POST http://localhost:8080/api/credit-applications
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "amount": 50000,
+  "term": 12,
+  "income": 30000,
+  "currentDebt": 5000,
+  "creditRating": 750
+}
+
+<> 2025-08-17T101550.200.json
+
+###
+
+POST http://localhost:8081/api/credit-processing/process
+Content-Type: application/json
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "applicationId": "b37d0e1c-4abd-46fe-b76d-844d50850d48",
+  "amount": 390000,
+  "term": 12,
+  "income": 60000,
+  "currentDebt": 20000,
+  "creditRating": 600
+}
+
+<> 2025-08-17T101453.200.txt
+
+###
+
+GET http://localhost:8080/api/credit-applications/b37d0e1c-4abd-46fe-b76d-844d50850d48/status
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-17T101447.200.txt
+
+###
+
+POST http://localhost:8080/api/credit-applications
+Content-Type: application/json
+Content-Length: 102
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "amount": 390000,
+  "term": 12,
+  "income": 60000,
+  "currentDebt": 20000,
+  "creditRating": 600
+}
+
+<> 2025-08-17T101430.200.json
+
+###
+
+GET http://localhost:8081/actuator/health
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-17T101409.200.json
+
+###
+
+GET http://localhost:8080/actuator/health
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-17T101407.200.json
+
+###
+
 POST http://localhost:8080/api/credit-applications
 Content-Type: application/json
 Content-Length: 102
@@ -636,137 +781,6 @@ Accept: */*
 }
 
 <> 2025-08-16T203034.200.txt
-
-###
-
-GET http://localhost:8080/api/credit-applications/e097f072-8e1f-49bf-9e25-2edcc1bf32ec/status
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-POST http://localhost:8080/api/credit-applications
-Content-Type: application/json
-Content-Length: 102
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "amount": 970000,
-  "term": 12,
-  "income": 60000,
-  "currentDebt": 20000,
-  "creditRating": 600
-}
-
-<> 2025-08-16T202928.200.txt
-
-###
-
-GET http://localhost:8081/actuator/health
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-08-16T202912.200.json
-
-###
-
-GET http://localhost:8080/actuator/health
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-08-16T202856.200.json
-
-###
-
-POST http://localhost:8080/api/credit-applications
-Content-Type: application/json
-Content-Length: 101
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "amount": 200000,
-  "term": 12,
-  "income": 30000,
-  "currentDebt": 5000,
-  "creditRating": 650
-}
-
-<> 2025-08-16T191632.200.txt
-
-###
-
-POST http://localhost:8080/api/credit-applications
-Content-Type: application/json
-Content-Length: 102
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "amount": 150000,
-  "term": 36,
-  "income": 60000,
-  "currentDebt": 10000,
-  "creditRating": 720
-}
-
-<> 2025-08-16T191624.200.txt
-
-###
-
-POST http://localhost:8080/api/credit-applications
-Content-Type: application/json
-Content-Length: 101
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "amount": 200000,
-  "term": 12,
-  "income": 30000,
-  "currentDebt": 5000,
-  "creditRating": 650
-}
-
-<> 2025-08-16T191557.200.txt
-
-###
-
-POST http://localhost:8080/api/credit-applications
-Content-Type: application/json
-Content-Length: 100
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "amount": 50000,
-  "term": 12,
-  "income": 30000,
-  "currentDebt": 5000,
-  "creditRating": 750
-}
-
-<> 2025-08-16T191551.200.txt
-
-###
-
-GET http://localhost:8080/api/credit-applications/963219a9-9915-4dbc-b101-0e22f9302c0f/status
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-08-16T191523.200.txt
 
 ###
 

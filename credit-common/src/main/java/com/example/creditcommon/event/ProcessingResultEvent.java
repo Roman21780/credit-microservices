@@ -4,6 +4,7 @@ import com.example.creditcommon.enums.ApplicationStatus;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
@@ -14,4 +15,6 @@ public class ProcessingResultEvent {
     private UUID applicationId;
     private ApplicationStatus status; // Используем enum из common модуля
     private BigDecimal monthlyPayment;
+    private LocalDateTime decisionDate;
+    private String rejectionReason;
 }
