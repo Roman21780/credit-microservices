@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # Брокеры сообщений
   zookeeper:
@@ -36,9 +34,14 @@ services:
   # База данных
   postgres:
     image: postgres:15-alpine
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: Serebro11!!
       POSTGRES_DB: credit_db
     ports:
       - "5432:5432"
@@ -48,29 +51,35 @@ services:
   # Микросервисы
   credit-application-service:
     build:
-      context: ./credit-application-service
-    depends_on:
-      - postgres
-      - kafka
-      - rabbitmq
+      context: .
+      dockerfile: Dockerfile
+      args:
+        JAR_PATH: ./credit-application-service/build/libs/credit-application-service.jar
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/credit_db
-      SPRING_KAFKA_BOOTSTRAP-SERVERS: kafka:9092
-      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_PROFILES_ACTIVE: docker
     ports:
-      - "8081:8081"
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
 
   credit-processing-service:
     build:
-      context: ./credit-processing-service
+      context: .
+      dockerfile: Dockerfile
+      args:
+        JAR_PATH: ./credit-processing-service/build/libs/credit-processing-service.jar
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8081:8081"
     depends_on:
       - kafka
       - rabbitmq
-    environment:
-      SPRING_KAFKA_BOOTSTRAP-SERVERS: kafka:9092
-      SPRING_RABBITMQ_HOST: rabbitmq
-    ports:
-      - "8082:8082"
 
 volumes:
   postgres_data:

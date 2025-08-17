@@ -26,6 +26,7 @@
 ## Собрать проект
 
 # Очистка
+Remove-Item -Recurse -Force .gradle, .idea, build, */build -ErrorAction SilentlyContinue
 ./gradlew :credit-application-service:clean
 ./gradlew :credit-processing-service:clean
 

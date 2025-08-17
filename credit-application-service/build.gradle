@@ -66,3 +66,7 @@ tasks.named('test') {
 bootJar {
     archiveFileName = 'credit-application-service.jar'
 }
+
+jar {
+    enabled = false
+}
