@@ -1,3 +1,26 @@
+# Цепочка обработки:
+
+## credit-application-service:
+
+Создает заявку со статусом IN_PROCESS
+
+Отправляет событие в Kafka
+
+## credit-processing-service:
+
+Получает событие из Kafka
+
+Рассчитывает решение
+
+Отправляет результат в RabbitMQ
+
+## credit-application-service:
+
+Получает результат из RabbitMQ
+
+Обновляет статус заявки
+
+
 # Инструкция по запуску
 
 ## Собрать проект
@@ -65,6 +88,9 @@ rabbitmqctl.bat list_connections
 
 # Управление плагинами (например, для веб-интерфейса)
 rabbitmq-plugins.bat enable rabbitmq_management
+
+# Логи
+Get-Content -Path "C:\Program Files\RabbitMQ Server\rabbitmq_server-4.1.3\var\log\rabbitmq\*.log" -Tail 20
 
 ## Статус сервисов
 docker ps | grep -E 'kafka|rabbitmq'

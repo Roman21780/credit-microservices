@@ -1,26 +1,40 @@
 package com.example.creditapplicationservice.messaging;
 
-import com.example.creditapplicationservice.model.CreditApplication;
 import com.example.creditapplicationservice.repository.CreditApplicationRepository;
 import com.example.creditcommon.event.ProcessingResultEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 
 @Slf4j
 @Component
 @RequiredArgsConstructor
 public class CreditStatusUpdateListener {
+    private final CreditApplicationRepository repository;
 
-    private final CreditApplicationRepository creditApplicationRepository;
-
-    @RabbitListener(queues = "credit-responses")
+    @RabbitListener(queues = "${rabbitmq.queue.credit-responses}")
+    @Transactional
     public void updateStatus(ProcessingResultEvent result) {
-        creditApplicationRepository.updateStatus(
-                result.getApplicationId(),
-                CreditApplication.Status.valueOf(String.valueOf(result.getStatus()))
-        );
+        try {
+            log.info("Received status update for application {}: {}",
+                    result.getApplicationId(), result.getStatus());
+
+            int updated = repository.updateStatus(
+                    result.getApplicationId(),
+                    result.getStatus().name()
+            );
+
+            if (updated == 0) {
+                log.warn("No application found with ID: {}", result.getApplicationId());
+            } else {
+                log.info("Successfully updated status for {}", result.getApplicationId());
+            }
+        } catch (Exception e) {
+            log.error("Failed to update status for {}", result.getApplicationId(), e);
+            throw new RuntimeException("Status update failed", e);
+        }
     }
 }

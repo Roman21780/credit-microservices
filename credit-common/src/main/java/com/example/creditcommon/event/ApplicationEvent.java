@@ -1,6 +1,5 @@
 package com.example.creditcommon.event;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

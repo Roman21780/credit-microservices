@@ -18,6 +18,6 @@ public interface CreditApplicationRepository extends JpaRepository<CreditApplica
 
     @Modifying
     @Query("UPDATE CreditApplication c SET c.status = :status WHERE c.id = :applicationId")
-    void updateStatus(@Param("applicationId") UUID applicationId,
-                     @Param("status") CreditApplication.Status status);
+    int updateStatus(@Param("applicationId") UUID applicationId,
+                     @Param("status") String status);
 }
