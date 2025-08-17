@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class KafkaProducerService {
     private final KafkaTemplate<String, ApplicationEvent> kafkaTemplate;
 
-    public void sendApplicationEvent(ApplicationEvent event) {
+    public void sendApplicationEvent(String s, ApplicationEvent event) {
         kafkaTemplate.send("credit-applications", event);
     }
 }

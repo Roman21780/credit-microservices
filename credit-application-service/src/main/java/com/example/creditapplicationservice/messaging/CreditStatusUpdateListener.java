@@ -19,7 +19,7 @@ public class CreditStatusUpdateListener {
     @Transactional
     public void updateStatus(ProcessingResultEvent result) {
         try {
-            log.info("Received status update for application {}: {}",
+            log.info("Received status update for {}: {}",
                     result.getApplicationId(), result.getStatus());
 
             int updated = repository.updateStatus(
@@ -28,13 +28,12 @@ public class CreditStatusUpdateListener {
             );
 
             if (updated == 0) {
-                log.warn("No application found with ID: {}", result.getApplicationId());
+                log.error("No application found with ID: {}", result.getApplicationId());
             } else {
                 log.info("Successfully updated status for {}", result.getApplicationId());
             }
         } catch (Exception e) {
             log.error("Failed to update status for {}", result.getApplicationId(), e);
-            throw new RuntimeException("Status update failed", e);
         }
     }
 }

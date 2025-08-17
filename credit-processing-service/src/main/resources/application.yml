@@ -1,25 +1,22 @@
 spring:
-  management:
-    endpoint:
-      health:
-        enabled: true
-    endpoints:
-      web:
-        exposure:
-          include: health
-
+  application:
+    name: credit-processing-service
   kafka:
-    bootstrap-servers: localhost:9092
     consumer:
       group-id: credit-processing-group
-
+      auto-offset-reset: earliest
+      properties:
+        spring.json.value.default.type: com.example.creditcommon.event.ApplicationEvent
+        spring.json.trusted.packages: com.example.creditcommon
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
-    queue:
-      credit-responses: credit-responses
+    template:
+      exchange: credit-exchange
+      routing-key: credit-responses
 
-server:
-  port: 8081
+rabbitmq:
+  queue:
+    credit-responses: credit-responses
