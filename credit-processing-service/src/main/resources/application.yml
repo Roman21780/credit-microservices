@@ -3,13 +3,14 @@ spring:
     name: credit-processing-service
   kafka:
     consumer:
+      bootstrap-servers: kafka:9092
       group-id: credit-processing-group
       auto-offset-reset: earliest
       properties:
         spring.json.value.default.type: com.example.creditcommon.event.ApplicationEvent
         spring.json.trusted.packages: com.example.creditcommon
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest

@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="949d09d9-7e6e-4efa-a252-d5bc0b446972" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/dto/CreditApplicationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/dto/CreditApplicationDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/messaging/CreditStatusUpdateListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/messaging/CreditStatusUpdateListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/model/CreditApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/model/CreditApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/repository/CreditApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/repository/CreditApplicationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/CreditApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/java/com/example/creditapplicationservice/service/CreditApplicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ProcessingResultEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/credit-common/src/main/java/com/example/creditcommon/event/ProcessingResultEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credit-microservices.http" beforeDir="false" afterPath="$PROJECT_DIR$/credit-microservices.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-application-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-application-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-processing-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/credit-processing-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credit-processing-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +75,7 @@
         <option value="AnnotationType" />
         <option value="Class" />
         <option value="Enum" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -230,7 +218,7 @@
       <workItem from="1755332560905" duration="10383000" />
       <workItem from="1755343485595" duration="12565000" />
       <workItem from="1755365240125" duration="3781000" />
-      <workItem from="1755405966536" duration="14673000" />
+      <workItem from="1755405966536" duration="17816000" />
     </task>
     <servers />
   </component>
