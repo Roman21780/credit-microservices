@@ -9,7 +9,7 @@ spring:
           include: health
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/credit_db
+    url: jdbc:postgresql://postgres:5432/credit_db
     username: postgres
     password: Serebro11!!
     driver-class-name: org.postgresql.Driver

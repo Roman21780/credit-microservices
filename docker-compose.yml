@@ -49,14 +49,15 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   # Микросервисы
-  credit-application-service:
+  credit-microservices.credit-application-service:
     build:
       context: .
-      dockerfile: Dockerfile
-      args:
-        JAR_PATH: ./credit-application-service/build/libs/credit-application-service.jar
+      dockerfile: credit-application-service/Dockerfile
     environment:
-      SPRING_PROFILES_ACTIVE: docker
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/credit_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: Serebro11!!
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     ports:
       - "8080:8080"
     depends_on:
@@ -67,19 +68,17 @@ services:
       rabbitmq:
         condition: service_started
 
-  credit-processing-service:
+  credit-microservices.credit-processing-service:
     build:
       context: .
-      dockerfile: Dockerfile
-      args:
-        JAR_PATH: ./credit-processing-service/build/libs/credit-processing-service.jar
-    environment:
-      SPRING_PROFILES_ACTIVE: docker
+      dockerfile: credit-processing-service/Dockerfile
     ports:
       - "8081:8081"
     depends_on:
-      - kafka
-      - rabbitmq
+      kafka:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
 
 volumes:
   postgres_data:
